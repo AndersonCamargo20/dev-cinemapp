@@ -12,8 +12,6 @@ export function* getMovies(action) {
     return yield put(SearchCreator.setLoading(false));
   }
 
-  //mosqueteiros
-
   const url = `http://www.omdbapi.com/?apikey=925eba28&s=${dataSearch}&page=${page}`;
   console.log('url: ', url);
   const response = yield call(api.get, url);
@@ -22,18 +20,10 @@ export function* getMovies(action) {
     yield put(SearchCreator.setMovies(response?.data));
     return handlePagination();
   } else {
-    //TODO: MELHORAR TRATAMENTO DE ERROS
-    // dialog.toast('Nenhuma obra encontrada, com o termo pesquisado', true);
     yield put(SearchCreator.setMovies([]));
     yield put(SearchCreator.setLoading(false));
     yield errorHandler(response);
   }
-
-  ///MAP DE ERROS
-  // {
-  //     "Response": "False",
-  //     "Error": "Incorrect IMDb ID."
-  // }
 }
 
 export function* selectFavorites(action) {
