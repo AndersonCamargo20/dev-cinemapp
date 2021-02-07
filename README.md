@@ -16,7 +16,6 @@ Para auxiliar você nesse processo fizemos um protótipo rápido utilizando o Fi
 
 [https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain](https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain)
 
-
 Para facilitar um pouco mais as coisas, já deixamos separada uma chave de acesso para a API (ou você pode criar a sua também):
 
 ```
@@ -30,5 +29,23 @@ Você pode desenvolver uma solução web ou mobile (react-native), se escolher a
 
 Deixe bem claro suas premissas, suposições e como executamos seu código. Para entregar essa solução, de um “fork” neste repositório e nos mande o link do novo repositório quando finalizar a tarefa.
 
-
 No mais aguardamos seu retorno. Boa sorte :)
+
+## Configuração incial
+
+Para a instalação dos pacotes execute o seguinte comando:
+
+- yarn
+
+# Execução local
+
+Para executar o App em modo de devel, execute os seguintes comandos:
+OBS: Assegure que o comando anterior foi executado.
+
+- yarn dev
+
+# Gerando a apk de instalção
+
+Caso queira gerar uma apk de debug para testar o app fora do ambiente de devel, execute o seguinte comando:
+
+- yarn build-android
