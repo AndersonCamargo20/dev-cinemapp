@@ -29,7 +29,7 @@ const Search = (props) => {
 
   return (
     <Container>
-      <Header title="OMDb - Anderson de Camargo" />
+      <Header title="Cinema App" />
       <TabNavigator routs={getTabRoutes()} />
     </Container>
   );
