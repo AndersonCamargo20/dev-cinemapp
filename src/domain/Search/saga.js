@@ -13,7 +13,7 @@ export function* getMovies(action) {
   }
 
   const url = `http://www.omdbapi.com/?apikey=925eba28&s=${dataSearch}&page=${page}`;
-  console.log('url: ', url);
+
   const response = yield call(api.get, url);
 
   if (response.ok && !response?.data?.Error) {
@@ -36,7 +36,6 @@ export function* selectFavorites(action) {
     oldListImd.push(itemFavorite.imdbID);
     yield put(SearchCreator.setFavorite(oldFavorites, oldListImd));
   } else {
-    console.log('ENTROU AQUI');
     const newFavorites = oldFavorites.filter((favorite) => {
       return itemFavorite?.imdbID !== favorite?.imdbID;
     });

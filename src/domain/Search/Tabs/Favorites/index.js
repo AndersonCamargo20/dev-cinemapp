@@ -8,7 +8,6 @@ import uuidv4 from 'uuid/v4';
 
 const TabFavorites = (props) => {
   const {loading, favorites, listImd, handleFavorite} = props;
-  console.log('listImd: ', JSON.stringify(listImd));
   return (
     <Container>
       <Content>
