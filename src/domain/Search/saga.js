@@ -22,7 +22,7 @@ export function* getMovies(action) {
   } else {
     yield put(SearchCreator.setMovies([]));
     yield put(SearchCreator.setLoading(false));
-    yield errorHandler(response);
+    return yield errorHandler(response);
   }
 }
 
