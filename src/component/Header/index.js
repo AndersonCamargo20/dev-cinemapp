@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {StyledHeader, Title, Subtitle} from './style';
 
-const Header = ({subtitle, title, cart, center}) => {
+const Header = ({subtitle, title, center}) => {
   return (
     <StyledHeader>
       {subtitle && <Subtitle center={center}>{subtitle}</Subtitle>}
-      <Title center={center} subtitle={subtitle} cart={cart}>
+      <Title center={center} subtitle={subtitle}>
         {title}
       </Title>
     </StyledHeader>
