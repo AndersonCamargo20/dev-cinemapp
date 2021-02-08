@@ -52,3 +52,4 @@ Na aba de favoritos deverá ser possível realizar as seguintes ações:
 - Identificado em testes que nem todas as obras que podem ser pesquisadas possuem imagens para visualização, nestes casos a obra ficará disponível para ser adicionada aos favoritos, mas não será possivel a visualização da imagem respestiva;
 - Caso seja retornado alguma obra fora do mapeamento realziado em utils/format, o mesmo retornará o tipo da obra sem tratamento especifico.
 - Junto ao código está disponível uma apk gerada anteriormente ao envio final do código, caso deseje, poderá utilizar para os testes.
+- Apk gerada no diretório principal: ./app-release.apk
